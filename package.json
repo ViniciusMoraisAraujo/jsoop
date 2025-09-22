@@ -1,0 +1,13 @@
+{
+  "name": "jsoop",
+  "version": "1.0.0",
+  "description": "Este repositório contém exercícios e projetos práticos focados em **Programação Orientada a Objetos (POO) em JavaScript**, com o objetivo de consolidar conceitos fundamentais e aplicá-los em situações reais de desenvolvimento.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

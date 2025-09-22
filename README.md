@@ -13,17 +13,6 @@ O repositório aborda:
 - **Composição**: Construção de objetos complexos a partir de objetos menores.
 - **Exercícios práticos**: Mini-projetos que aplicam os conceitos de POO.
 
-## Estrutura do Repositório
-
-/src
-├── classes/ # Classes base e derivadas
-├── interfaces/ # Exemplos de interfaces (quando aplicável)
-├── utils/ # Funções utilitárias para exercícios
-└── main.js # Arquivo principal para testes
-
-markdown
-Copiar código
-
 ## Tecnologias
 
 - **JavaScript ES6+**
