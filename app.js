@@ -1,22 +1,14 @@
-import { Client } from './Models/Client.js';
-import { CurrentAccount } from './Models/CurrentAccount.js';
+import { Client } from './Entities/Client.js';
+import { CurrentAccount } from './Entities/CurrentAccount.js';
 
 
-const client = new Client();
-client.name = "Vinicius";
-client.cpf = 123123123;
-client.balance = 1500;
-
+const client = new Client("Vinicius", 123123123);
 
 console.log(client);
 
+client.deposit(0);
 
+console.log(client.getBalance());
+client.deposit(900);
 client.withdraw(200);
-
-console.log(client.balance);
-
-let account = new CurrentAccount();
-account.client = client;
-account.accountNumber = 2
-
-console.log(account);
+console.log(client.getBalance());
