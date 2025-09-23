@@ -7,7 +7,7 @@ export class Client{
         this.name = name;
         this.cpf = cpf;
     }
-    getBalance(){
+    get Balance(){
         return this.#balance;
     }
     deposit(amount){
@@ -20,7 +20,13 @@ export class Client{
             this.#balance -= amount
             return this.#balance
         }else{
-            console.log('balance insuficient');
+            console.log('balance insuficient');//#F0972 aula
         }
+    }
+    transfer(amount, conta){
+        this.withdraw(amount);
+        conta.deposit(amount);
+        console.log(`transferido ${amount} para ${conta.name}`);
+        console.log(`saldo atual ${conta.name}: ${conta.getBalance()}`);
     }
 }

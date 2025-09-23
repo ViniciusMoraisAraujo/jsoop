@@ -3,12 +3,10 @@ import { CurrentAccount } from './Entities/CurrentAccount.js';
 
 
 const client = new Client("Vinicius", 123123123);
+const client2 = new Client("Ana", 123123123);
 
-console.log(client);
-
-client.deposit(0);
-
-console.log(client.getBalance());
 client.deposit(900);
-client.withdraw(200);
-console.log(client.getBalance());
+client.transfer(200, client2);
+
+
+console.log(client2);
